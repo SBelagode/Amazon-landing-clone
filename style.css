@@ -1110,10 +1110,10 @@ a{
   }
 
 
-  @media (max-width: 770px){
+  @media (max-width: 369px){
     body{
       width: 470vw;
-      overflow-y: clip;
+      overflow-y: hidden;
       overflow-x: scroll;
     }
     .search-Bar-section {
@@ -1122,9 +1122,19 @@ a{
       
     }
 
+    .search-Bar-section > div {
+      
+      flex-grow: 1;
+      
+    }
+    #search-bar{
+      width: 100%;
+    }
+
+
     .account-and-lists-dropdown{
       width: 46%;
-      height: 10%;
+      height: 11%;
     }
     /***
     .main-content {
@@ -1134,13 +1144,15 @@ a{
     **/
 
     .language-dropdown-area{
-      width: 17%;
-      height: 10%;
+      width: 14%;
+      height: 12%;
+      right: 165px !important;
     }
 
     #language-dropdown-triangle{
-      right: 272px;
+      right: 306px !important;
     }
+    /**
     @viewport {
       
         width: device-width;
@@ -1149,6 +1161,96 @@ a{
         max-zoom: 11;
         user-zoom: fixed;  
     }
+    **/
+    .searchButton{
+      flex-grow: 0 !important;
+    }
+    .dropdown{
+      flex-grow: 0 !important;
+
+    }
+
+    #Address{
+      flex-grow: 0 !important;
+      margin-right: 1% !important;
+    }
+    #search{
+      flex-grow: 65;
+    }
+  }
+
+  @media (min-width: 370px) and (max-width: 770px){
+    body{
+      width: 470vw;
+      overflow-y: hidden;
+      overflow-x: scroll;
+    }
+    .search-Bar-section {
+      
+      width: 100%;
+      
+    }
+
+    .search-Bar-section > div {
+      
+      flex-grow: 1;
+      
+    }
+
+    .account-and-lists-dropdown{
+      width: 46%;
+      height: 11%;
+    }
+
+    #account-and-lists-dropdown-triangle {
+      right: 252px;
+    }
+    /***
+    .main-content {
+      
+      height: 170vh;
+    }
+    **/
+
+    .language-dropdown-area{
+      width: 13.4%;
+      height: 12%;
+      right: 206px !important;
+    }
+
+    #language-dropdown-triangle{
+      right: 338px !important;
+      
+    }
+    /**
+    @viewport {
+      
+        width: device-width;
+        zoom: 10;
+        min-zoom: 10;
+        max-zoom: 11;
+        user-zoom: fixed;  
+    }
+    **/
+    #search-bar{
+      width: 100%;
+    }
+    .searchButton{
+      flex-grow: 0 !important;
+    }
+    .dropdown{
+      flex-grow: 0 !important;
+
+    }
+    #Address{
+      flex-grow: 0 !important;
+      margin-right: 1% !important;
+    }
+    #search{
+      flex-grow: 65;
+    }
+
+    
   }
 
 
